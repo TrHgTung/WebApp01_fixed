@@ -12,13 +12,13 @@ namespace WebApp01.Areas.Admin.Controllers
     {
       
 
-        private readonly DataContext _dataContext;
-        private readonly IWebHostEnvironment _webHostEnvironment;
-        public StatController(DataContext context, IWebHostEnvironment webHostEnvironment)
-        {
-            _dataContext = context;
-            _webHostEnvironment = webHostEnvironment;
-        }
+        //private readonly DataContext _dataContext;
+        //private readonly IWebHostEnvironment _webHostEnvironment;
+        //public StatController(DataContext context)
+        //{
+        //    _dataContext = context;
+        //    //_webHostEnvironment = webHostEnvironment;
+        //}
         public IActionResult Index()
         {
             Models.ProductModel model;
