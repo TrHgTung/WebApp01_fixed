@@ -64,9 +64,11 @@ namespace WebApp01.Controllers
                 using (var client = new SmtpClient())
                 {
                     client.Connect("smtp.gmail.com");
-                    client.Authenticate("tungng14@gmail.com", "lcquxrphmjcfdjmo");
+                    client.Authenticate("tungng14@gmail.com", "ygsidwydvavssczx");
+                    TempData["mailContent"] = Email;
+
                     var mailContent = TempData["mailContent"];
-                    ViewBag.Mail = mailContent;
+                    //ViewBag.Mail = mailContent;
                     var bodyBuilder = new BodyBuilder
                     {
                        
